@@ -1,7 +1,7 @@
 package org.vaadin.grails.data.util
 
-import com.vaadin.data.Property
-import com.vaadin.data.util.AbstractProperty
+import com.vaadin.v7.data.Property
+import com.vaadin.v7.data.util.AbstractProperty
 import grails.core.GrailsDomainClass
 import groovy.transform.Memoized
 

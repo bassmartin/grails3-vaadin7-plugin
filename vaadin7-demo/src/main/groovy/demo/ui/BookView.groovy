@@ -2,15 +2,14 @@ package demo.ui
 
 import com.vaadin.navigator.View
 import com.vaadin.navigator.ViewChangeListener
-import com.vaadin.server.Sizeable
 import com.vaadin.ui.Button
 import com.vaadin.ui.CustomComponent
 import com.vaadin.ui.FormLayout
-import com.vaadin.ui.Grid
-import com.vaadin.ui.HorizontalLayout
-import com.vaadin.ui.Label
-import com.vaadin.ui.VerticalLayout
 import com.vaadin.ui.Window
+import com.vaadin.v7.ui.Grid
+import com.vaadin.v7.ui.HorizontalLayout
+import com.vaadin.v7.ui.Label
+import com.vaadin.v7.ui.VerticalLayout
 import demo.Book
 import org.vaadin.grails.data.fieldgroup.DomainFieldGroup
 import org.vaadin.grails.data.util.DomainItem
@@ -77,7 +76,7 @@ class BookView extends CustomComponent implements View {
         void open(DomainItem<Book> itemDataSource) {
             fieldGroup.itemDataSource = itemDataSource
 
-            def ui = com.vaadin.ui.UI.current
+            def ui = com.vaadin.v7.ui.UI.current
             if (!ui.windows.contains(this)) {
                 ui.addWindow(this)
 

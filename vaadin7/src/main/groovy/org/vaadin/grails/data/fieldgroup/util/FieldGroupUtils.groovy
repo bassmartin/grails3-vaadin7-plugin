@@ -1,9 +1,9 @@
 package org.vaadin.grails.data.fieldgroup.util
 
-import com.vaadin.data.Validator.InvalidValueException
-import com.vaadin.data.fieldgroup.FieldGroup
-import com.vaadin.data.fieldgroup.FieldGroup.CommitException
-import com.vaadin.ui.Field
+import com.vaadin.v7.data.Validator.InvalidValueException
+import com.vaadin.v7.data.fieldgroup.FieldGroup
+import com.vaadin.v7.data.fieldgroup.FieldGroup.CommitException
+import com.vaadin.v7.ui.Field
 import com.vaadin.ui.Notification
 import org.apache.commons.lang.StringUtils
 import org.springframework.web.util.HtmlUtils

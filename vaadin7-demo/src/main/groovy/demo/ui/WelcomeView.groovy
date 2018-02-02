@@ -2,7 +2,12 @@ package demo.ui
 
 import com.vaadin.navigator.View
 import com.vaadin.navigator.ViewChangeListener
-import com.vaadin.ui.*
+import com.vaadin.ui.Button
+import com.vaadin.ui.CustomComponent
+import com.vaadin.ui.Notification
+import com.vaadin.v7.ui.Label
+import com.vaadin.v7.ui.TextField
+import com.vaadin.v7.ui.VerticalLayout
 import grails.plugins.vaadin.server.UIAttributes
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component

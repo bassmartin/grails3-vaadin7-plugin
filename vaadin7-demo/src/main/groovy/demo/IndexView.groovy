@@ -3,7 +3,7 @@ package demo
 import com.vaadin.navigator.View
 import com.vaadin.navigator.ViewChangeListener
 import com.vaadin.ui.CustomComponent
-import com.vaadin.ui.VerticalLayout
+import com.vaadin.v7.ui.VerticalLayout
 
 class IndexView extends CustomComponent implements View {
 

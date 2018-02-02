@@ -1,6 +1,6 @@
 package org.vaadin.grails.data.util.converter
 
-import com.vaadin.data.util.converter.Converter
+import com.vaadin.v7.data.util.converter.Converter
 import grails.util.Holders
 import groovy.transform.CompileStatic
 import org.apache.commons.lang.StringUtils
@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat
  * localized date formats.
  *
  * @author Stephan Grundner
- * @see {@link com.vaadin.data.util.converter.StringToDateConverter}
+ * @see {@link com.vaadin.v7.data.util.converter.StringToDateConverter}
  * @since 2.0
  */
 @CompileStatic
@@ -29,7 +29,7 @@ class StringToDateConverter implements Converter<String, Date> {
     }
 
     StringToDateConverter() {
-        fallbackConverter = new com.vaadin.data.util.converter.StringToDateConverter()
+        fallbackConverter = new com.vaadin.v7.data.util.converter.StringToDateConverter()
     }
 
     protected DateFormat getDateFormat(Locale locale) {

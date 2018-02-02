@@ -1,7 +1,7 @@
 package org.vaadin.grails.data.util
 
-import com.vaadin.data.Item
-import com.vaadin.data.Property
+import com.vaadin.v7.data.Item
+import com.vaadin.v7.data.Property
 import grails.core.GrailsDomainClass
 import org.springframework.validation.Errors
 import org.vaadin.grails.util.GrailsUtils

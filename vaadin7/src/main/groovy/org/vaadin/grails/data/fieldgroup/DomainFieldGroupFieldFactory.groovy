@@ -1,7 +1,7 @@
 package org.vaadin.grails.data.fieldgroup
 
-import com.vaadin.data.fieldgroup.FieldGroupFieldFactory
-import com.vaadin.ui.*
+import com.vaadin.v7.data.fieldgroup.FieldGroupFieldFactory
+import com.vaadin.v7.ui.*
 import groovy.transform.Memoized
 import org.apache.commons.lang.StringUtils
 import org.vaadin.grails.util.GrailsUtils

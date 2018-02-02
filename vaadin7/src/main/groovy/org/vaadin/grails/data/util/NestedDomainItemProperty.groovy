@@ -1,6 +1,6 @@
 package org.vaadin.grails.data.util
 
-import com.vaadin.data.Property
+import com.vaadin.v7.data.Property
 import groovy.transform.Memoized
 import org.apache.commons.lang.ArrayUtils
 

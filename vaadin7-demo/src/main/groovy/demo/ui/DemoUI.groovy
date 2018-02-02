@@ -3,10 +3,10 @@ package demo.ui
 import com.vaadin.navigator.Navigator
 import com.vaadin.server.VaadinRequest
 import com.vaadin.shared.Version
-import com.vaadin.ui.Label
+import com.vaadin.v7.ui.Label
 import com.vaadin.ui.Panel
 import com.vaadin.ui.UI
-import com.vaadin.ui.VerticalLayout
+import com.vaadin.v7.ui.VerticalLayout
 import grails.util.Environment
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component

@@ -1,8 +1,8 @@
 package org.vaadin.grails.data.fieldgroup
 
-import com.vaadin.data.Item
-import com.vaadin.data.fieldgroup.FieldGroup
-import com.vaadin.ui.Field
+import com.vaadin.v7.data.Item
+import com.vaadin.v7.data.fieldgroup.FieldGroup
+import com.vaadin.v7.ui.Field
 import org.vaadin.grails.data.fieldgroup.util.FieldGroupUtils
 import org.vaadin.grails.data.util.DomainItem
 import org.vaadin.grails.data.util.DomainObjectProvider

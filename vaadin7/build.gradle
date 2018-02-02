@@ -1,7 +1,7 @@
 buildscript {
     ext {
         grailsVersion = project.grailsVersion
-        vaadinVersion = "7.5.0"
+        vaadinVersion = "8.3.0"
     }
     repositories {
         mavenLocal()
@@ -14,21 +14,17 @@ buildscript {
 
 plugins {
     id "io.spring.dependency-management" version "0.4.0.RELEASE"
-    id "com.jfrog.bintray" version "1.1"
 }
 
-version "3.0.1"
+version "8.0.1"
 group "org.grails.plugins"
 
-apply plugin: 'maven-publish'
+apply plugin: 'maven'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "spring-boot"
 apply plugin: "org.grails.grails-plugin"
 apply plugin: "org.grails.grails-gsp"
-// Used for publishing to central repository, remove if not needed
-apply from:'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/grailsCentralPublishing.gradle'
-apply from:'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/bintrayPublishing.gradle'
 
 ext {
     grailsVersion = project.grailsVersion
@@ -66,35 +62,19 @@ dependencies {
     console "org.grails:grails-console"
 
     compile 'javax.servlet:jsp-api:2.0'
-    compile "com.vaadin:vaadin-server:${vaadinVersion}"
-    compile "com.vaadin:vaadin-shared:${vaadinVersion}"
-    compile "com.vaadin:vaadin-client-compiled:${vaadinVersion}"
-    compile("com.vaadin:vaadin-client:${vaadinVersion}") {
+    compile "com.vaadin:vaadin-compatibility-server:${vaadinVersion}"
+    compile "com.vaadin:vaadin-compatibility-shared:${vaadinVersion}"
+    compile "com.vaadin:vaadin-compatibility-client-compiled:${vaadinVersion}"
+    compile("com.vaadin:vaadin-compatibility-client:${vaadinVersion}") {
         exclude(group: 'javax.validation', module: 'validation-api')
     }
     compile("com.vaadin:vaadin-client-compiler:${vaadinVersion}") {
         exclude(group: 'javax.validation', module: 'validation-api')
     }
-    compile "com.vaadin:vaadin-themes:${vaadinVersion}"
     compile "com.vaadin:vaadin-push:${vaadinVersion}"
     compile 'javax.validation:validation-api:1.1.0.Final'
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
-}
-
-bintray {
-    user = bintrayUser
-    key = bintrayKey
-    pkg {
-        userOrg = 'vaadin-for-grails'
-        name = "org.grails.plugins:$project.name"
-        issueTrackerUrl = "https://github.com/vaadin-for-grails/vaadin7-plugin/issues"
-        vcsUrl = "https://github.com/vaadin-for-grails/vaadin7-plugin"
-        version {
-            attributes = ['grails-plugin': "org.grails.plugins:$project.name"]
-            name = project.version
-        }
-    }
 }

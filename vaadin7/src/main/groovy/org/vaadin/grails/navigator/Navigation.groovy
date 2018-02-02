@@ -62,10 +62,10 @@ class Navigation {
     /**
      * Navigate to a different UI or View.
      *
-     * @see {@link com.vaadin.navigator.Navigator#navigateTo(java.lang.String)}
+     * @see {@link com.vaadin.v7.navigator.Navigator#navigateTo(java.lang.String)}
      *
-     * @param path The path mapped to a {@link com.vaadin.ui.UI}
-     * @param fragment The fragment mapped to a {@link com.vaadin.navigator.View}
+     * @param path The path mapped to a {@link com.vaadin.v7.ui.UI}
+     * @param fragment The fragment mapped to a {@link com.vaadin.v7.navigator.View}
      */
     static void navigateTo(String path, String fragment) {
         def currentPath = getCurrentPath()

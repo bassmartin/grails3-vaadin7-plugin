@@ -1,6 +1,6 @@
 package org.vaadin.grails.data.validator
 
-import com.vaadin.data.Validator
+import com.vaadin.v7.data.Validator
 import groovy.transform.CompileStatic
 import org.springframework.validation.BeanPropertyBindingResult
 import org.vaadin.grails.data.util.DomainObjectProvider

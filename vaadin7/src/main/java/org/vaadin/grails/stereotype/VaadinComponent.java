@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 
 /**
  * Alias for {@link org.springframework.stereotype.Component}
- * to avoid naming conficts with {@link com.vaadin.v7.ui.Component}.
+ * to avoid naming conficts with {@link com.vaadin.ui.Component}.
  *
  * @author Stephan Grundner
  */

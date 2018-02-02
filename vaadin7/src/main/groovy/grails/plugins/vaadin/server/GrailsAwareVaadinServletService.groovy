@@ -5,7 +5,7 @@ import com.vaadin.server.ServiceException
 import com.vaadin.server.VaadinServletService
 
 /**
- * Grails specific implementation for {@link com.vaadin.v7.server.VaadinServletService}.
+ * Grails specific implementation for {@link com.vaadin.server.VaadinServletService}.
  *
  * @author Stephan Grundner
  * @since 3.0

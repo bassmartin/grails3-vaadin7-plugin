@@ -28,7 +28,7 @@ class OpenSessionInViewFilterRegistrationBean extends FilterRegistrationBean {
     void onStartup(ServletContext servletContext) throws ServletException {
         try {
 //            TODO Support für Hibernate 3!?
-            def filterClassName = 'org.springframework.orm.hibernate4.support.OpenSessionInViewFilter'
+            def filterClassName = 'org.springframework.orm.hibernate5.support.OpenSessionInViewFilter'
             filter = Holders.grailsApplication.classLoader.loadClass(filterClassName).newInstance()
             log.debug("Using filter [$filterClassName]")
             super.onStartup(servletContext)

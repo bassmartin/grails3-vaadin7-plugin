@@ -10,7 +10,7 @@ import org.vaadin.grails.navigator.UriMappings
 import javax.servlet.ServletRegistration
 
 /**
- * Factory bean for {@link GrailsAwareVaadinServlet}.
+ * Factory bean for {GrailsAwareVaadinServlet}.
  *
  * @author Stephan Grundner
  * @since 3.0

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.context.embedded.ServletRegistrationBean
 import org.vaadin.grails.navigator.UriMappings
 
+import javax.servlet.Servlet
 import javax.servlet.ServletRegistration
 
 /**
@@ -23,7 +24,11 @@ class GrailsAwareVaadinServletRegistrationBean extends ServletRegistrationBean {
     UriMappings uriMappings
 
     GrailsAwareVaadinServletRegistrationBean() {
-        super(new GrailsAwareVaadinServlet(), ['/VAADIN/*'] as String[])
+        this(new GrailsAwareVaadinServlet())
+    }
+
+    GrailsAwareVaadinServletRegistrationBean(Servlet servlet) {
+        super(servlet, ['/VAADIN/*'] as String[])
     }
 
     protected String getUIProviderClassName() {
